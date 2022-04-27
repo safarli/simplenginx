@@ -9,7 +9,7 @@ stages:
 build_docker:
   stage: build
   tags:
-    - BSFFR
+    - DRNR
   image: docker:latest
   services:
     - docker:dind
