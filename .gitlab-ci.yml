@@ -4,7 +4,7 @@ stages:
 deploy_vps:
   stage: test
   tags:
-    - BSFFR
+    - SAFAR
   script:
     - echo SALAM
     - echo $USER
