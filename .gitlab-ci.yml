@@ -23,6 +23,7 @@ deploy_job:
     - docker compose down
     - docker compose up -d
 
+
 # build_job:
 #   stage: build
 #   tags:
