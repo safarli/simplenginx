@@ -1,0 +1,7 @@
+services:
+  nginx_service:
+    container_name: nginx_service
+    restart: unless-stopped
+    image: registr.gitlab.com/oeblu/simplenginx:latest
+    ports:
+      - 80:80
