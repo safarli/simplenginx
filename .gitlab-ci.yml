@@ -1,7 +1,7 @@
 stages:
   - test
 
-deploy_vps:
+test_job:
   stage: test
   tags:
     - SAFAR
