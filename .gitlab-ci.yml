@@ -1,6 +1,7 @@
 stages:
   - build
   - deploy
+  - test
 
 build_job:
   stage: build
@@ -23,6 +24,13 @@ deploy_job:
     - docker compose down
     - docker compose up -d
 
+
+test_job:
+  stage: test
+  tags:
+    - SAFAR
+  script:
+    - ssh -i $ID_RSA -o StrictHostKeyChecking=no meow@176.58.120.178 "touch RICKYMARTIN.txt;"
 
 # build_job:
 #   stage: build

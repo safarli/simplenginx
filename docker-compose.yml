@@ -1,5 +1,5 @@
 services:
-  nginx_service:
+  proxy_server:
     container_name: nginx_service
     restart: unless-stopped
     image: registry.gitlab.com/oeblu/simplenginx:latest
